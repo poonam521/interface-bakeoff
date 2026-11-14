@@ -1,0 +1,36 @@
+{
+ "task": "create_after_validation",
+ "interface": "api",
+ "run": 3,
+ "passed": true,
+ "failure_category": null,
+ "claim": "done",
+ "stop": "finish",
+ "instruction": "Create a new ticket titled 'Quarterly disaster recovery backup restore test for all production file servers'. If the app refuses that title because it is too long, use the title 'Quarterly backup restore test' instead. Leave every other field at its default.",
+ "steps": [
+  {
+   "index": 1,
+   "name": "create_ticket",
+   "args": {
+    "title": "Quarterly disaster recovery backup restore test for all production file servers"
+   },
+   "summary": "{\"error\": \"Title is too long (79 characters, the limit is 60).\"}",
+   "is_error": true,
+   "label": "no_change",
+   "changes": []
+  },
+  {
+   "index": 2,
+   "name": "create_ticket",
+   "args": {
+    "title": "Quarterly backup restore test"
+   },
+   "summary": "{\"assignee\": null, \"comments\": [], \"created_at\": \"2026-11-14T07:08:14+00:00\", \"description\": \"\", \"due_date\": null, \"id\": 31, \"priority\": \"medium\", \"status\": \"open\", \"title\": \"Quarterly backup restore test\", \"updated_at\": \"2026-11-14T07:08:14+00:00\"}",
+   "is_error": false,
+   "label": "in_scope",
+   "changes": [
+    "insert tickets #31"
+   ]
+  }
+ ]
+}

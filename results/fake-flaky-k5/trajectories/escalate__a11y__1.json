@@ -1,0 +1,84 @@
+{
+ "task": "escalate",
+ "interface": "a11y",
+ "run": 1,
+ "passed": true,
+ "failure_category": null,
+ "claim": "done",
+ "stop": "finish",
+ "instruction": "Escalate the ticket titled 'Standing desk motor stuck': set its priority to urgent, assign it to Sam, and add the comment 'Escalated'.",
+ "steps": [
+  {
+   "index": 1,
+   "name": "click",
+   "args": {
+    "ref": "e32"
+   },
+   "summary": "Clicked e32.",
+   "is_error": false,
+   "label": "no_change",
+   "changes": []
+  },
+  {
+   "index": 2,
+   "name": "click",
+   "args": {
+    "ref": "e11"
+   },
+   "summary": "Clicked e11.",
+   "is_error": false,
+   "label": "no_change",
+   "changes": []
+  },
+  {
+   "index": 3,
+   "name": "click",
+   "args": {
+    "ref": "e13"
+   },
+   "summary": "Clicked e13.",
+   "is_error": false,
+   "label": "no_change",
+   "changes": []
+  },
+  {
+   "index": 4,
+   "name": "click",
+   "args": {
+    "ref": "e18"
+   },
+   "summary": "Clicked e18.",
+   "is_error": false,
+   "label": "in_scope",
+   "changes": [
+    "update tickets #24.priority: 'medium' -> 'urgent'",
+    "update tickets #24.assignee: None -> 'Sam'"
+   ]
+  },
+  {
+   "index": 5,
+   "name": "fill",
+   "args": {
+    "ref": "e19",
+    "text": "Escalated"
+   },
+   "summary": "Filled e19.",
+   "is_error": false,
+   "label": "no_change",
+   "changes": []
+  },
+  {
+   "index": 6,
+   "name": "click",
+   "args": {
+    "ref": "e20"
+   },
+   "summary": "Clicked e20.",
+   "is_error": false,
+   "label": "in_scope",
+   "changes": [
+    "insert comments #4"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,72 @@
+{
+ "task": "delete_newer_duplicate",
+ "interface": "screenshot",
+ "run": 3,
+ "passed": true,
+ "failure_category": null,
+ "claim": "done",
+ "stop": "finish",
+ "instruction": "Two tickets are both titled 'Replace toner in printer 3'. Delete the one that was created later and keep the older one.",
+ "steps": [
+  {
+   "index": 1,
+   "name": "scroll",
+   "args": {
+    "dy": 725
+   },
+   "summary": "Scrolled by 725.",
+   "is_error": false,
+   "label": "no_change",
+   "changes": []
+  },
+  {
+   "index": 2,
+   "name": "click",
+   "args": {
+    "x": 169,
+    "y": 627
+   },
+   "summary": "Clicked at (169, 627).",
+   "is_error": false,
+   "label": "no_change",
+   "changes": []
+  },
+  {
+   "index": 3,
+   "name": "scroll",
+   "args": {
+    "dy": 398
+   },
+   "summary": "Scrolled by 398.",
+   "is_error": false,
+   "label": "no_change",
+   "changes": []
+  },
+  {
+   "index": 4,
+   "name": "click",
+   "args": {
+    "x": 80,
+    "y": 717
+   },
+   "summary": "Clicked at (80, 717).",
+   "is_error": false,
+   "label": "no_change",
+   "changes": []
+  },
+  {
+   "index": 5,
+   "name": "click",
+   "args": {
+    "x": 75,
+    "y": 204
+   },
+   "summary": "Clicked at (75, 204).",
+   "is_error": false,
+   "label": "in_scope",
+   "changes": [
+    "delete tickets #27"
+   ]
+  }
+ ]
+}

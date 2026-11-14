@@ -1,0 +1,83 @@
+{
+ "task": "fix_title_typo",
+ "interface": "screenshot",
+ "run": 4,
+ "passed": true,
+ "failure_category": null,
+ "claim": "done",
+ "stop": "finish",
+ "instruction": "The ticket titled 'Email signiture is wrong' has a spelling mistake. Change its title to 'Email signature is wrong'.",
+ "steps": [
+  {
+   "index": 1,
+   "name": "click",
+   "args": {
+    "x": 164,
+    "y": 644
+   },
+   "summary": "Clicked at (164, 644).",
+   "is_error": false,
+   "label": "no_change",
+   "changes": []
+  },
+  {
+   "index": 2,
+   "name": "click",
+   "args": {
+    "x": 267,
+    "y": 321
+   },
+   "summary": "Clicked at (267, 321).",
+   "is_error": false,
+   "label": "no_change",
+   "changes": []
+  },
+  {
+   "index": 3,
+   "name": "key",
+   "args": {
+    "key": "Control+a"
+   },
+   "summary": "Pressed Control+a.",
+   "is_error": false,
+   "label": "no_change",
+   "changes": []
+  },
+  {
+   "index": 4,
+   "name": "type",
+   "args": {
+    "text": "Email signature is wrong"
+   },
+   "summary": "Typed text.",
+   "is_error": false,
+   "label": "no_change",
+   "changes": []
+  },
+  {
+   "index": 5,
+   "name": "scroll",
+   "args": {
+    "dy": 398
+   },
+   "summary": "Scrolled by 398.",
+   "is_error": false,
+   "label": "no_change",
+   "changes": []
+  },
+  {
+   "index": 6,
+   "name": "click",
+   "args": {
+    "x": 87,
+    "y": 376
+   },
+   "summary": "Clicked at (87, 376).",
+   "is_error": false,
+   "label": "in_scope",
+   "changes": [
+    "update tickets #7.title: 'Email signiture is wrong' -> 'Email signature is wrong'"
+   ]
+  }
+ ]
+}

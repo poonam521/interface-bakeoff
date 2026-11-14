@@ -1,0 +1,61 @@
+{
+ "task": "close_by_title",
+ "interface": "screenshot",
+ "run": 2,
+ "passed": true,
+ "failure_category": null,
+ "claim": "done",
+ "stop": "finish",
+ "instruction": "Close the ticket titled 'Printer on floor 2 is jammed' (set its status to closed).",
+ "steps": [
+  {
+   "index": 1,
+   "name": "click",
+   "args": {
+    "x": 177,
+    "y": 432
+   },
+   "summary": "Clicked at (177, 432).",
+   "is_error": false,
+   "label": "no_change",
+   "changes": []
+  },
+  {
+   "index": 2,
+   "name": "click",
+   "args": {
+    "x": 251,
+    "y": 509
+   },
+   "summary": "Clicked at (251, 509).",
+   "is_error": false,
+   "label": "no_change",
+   "changes": []
+  },
+  {
+   "index": 3,
+   "name": "scroll",
+   "args": {
+    "dy": 398
+   },
+   "summary": "Scrolled by 398.",
+   "is_error": false,
+   "label": "no_change",
+   "changes": []
+  },
+  {
+   "index": 4,
+   "name": "click",
+   "args": {
+    "x": 87,
+    "y": 376
+   },
+   "summary": "Clicked at (87, 376).",
+   "is_error": false,
+   "label": "in_scope",
+   "changes": [
+    "update tickets #1.status: 'open' -> 'closed'"
+   ]
+  }
+ ]
+}

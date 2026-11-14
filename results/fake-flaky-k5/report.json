@@ -1,0 +1,324 @@
+{
+  "manifest": {
+    "started": "2026-11-14T07:07:34+00:00",
+    "agent": {
+      "agent": "fake",
+      "mode": "flaky",
+      "fail_rate": 0.15,
+      "seed": 0
+    },
+    "tasks": [
+      "create_basic",
+      "create_full",
+      "create_after_validation",
+      "close_by_title",
+      "reassign_and_prioritise",
+      "fix_title_typo",
+      "add_comment",
+      "escalate",
+      "move_note_and_close",
+      "bulk_reassign",
+      "search_close_matching",
+      "search_count_to_comment",
+      "delete_by_title",
+      "delete_newer_duplicate",
+      "close_missing_ticket"
+    ],
+    "interfaces": [
+      "screenshot",
+      "a11y",
+      "api"
+    ],
+    "k": 5,
+    "workers": 3,
+    "max_turns": 20,
+    "git_commit": null,
+    "ended": "2026-11-14T07:08:45+00:00",
+    "runs_recorded": 225,
+    "runs_planned": 225,
+    "stop_reason": null
+  },
+  "summary": {
+    "a11y": {
+      "runs": 75,
+      "valid_runs": 75,
+      "excluded_runs": 0,
+      "tasks": 15,
+      "tasks_with_all_k": 15,
+      "pass_hat_1": 0.8266666666666667,
+      "pass_hat_1_ci": [
+        0.7333333333333333,
+        0.92
+      ],
+      "pass_hat_k": 0.4666666666666667,
+      "pass_hat_k_ci": [
+        0.2,
+        0.7333333333333333
+      ],
+      "pass_at_k": 1.0,
+      "mean_actions": 4.5733,
+      "mean_turns": 5.5733,
+      "mean_tool_errors": 0,
+      "mean_input_tokens": 0,
+      "mean_output_tokens": 0,
+      "mean_cost_usd": 0.0,
+      "total_cost_usd": 0.0,
+      "mean_wall_seconds": 0.8705,
+      "failure_categories": {
+        "no_effect": 12,
+        "wrong_claim_infeasible": 1
+      },
+      "false_success_claims": 13,
+      "false_success_claim_rate": 0.18309859154929578,
+      "per_task": {
+        "add_comment": [
+          5,
+          5
+        ],
+        "bulk_reassign": [
+          4,
+          5
+        ],
+        "close_by_title": [
+          3,
+          5
+        ],
+        "close_missing_ticket": [
+          4,
+          5
+        ],
+        "create_after_validation": [
+          3,
+          5
+        ],
+        "create_basic": [
+          5,
+          5
+        ],
+        "create_full": [
+          5,
+          5
+        ],
+        "delete_by_title": [
+          5,
+          5
+        ],
+        "delete_newer_duplicate": [
+          3,
+          5
+        ],
+        "escalate": [
+          5,
+          5
+        ],
+        "fix_title_typo": [
+          4,
+          5
+        ],
+        "move_note_and_close": [
+          2,
+          5
+        ],
+        "reassign_and_prioritise": [
+          5,
+          5
+        ],
+        "search_close_matching": [
+          5,
+          5
+        ],
+        "search_count_to_comment": [
+          4,
+          5
+        ]
+      }
+    },
+    "api": {
+      "runs": 75,
+      "valid_runs": 75,
+      "excluded_runs": 0,
+      "tasks": 15,
+      "tasks_with_all_k": 15,
+      "pass_hat_1": 0.8266666666666667,
+      "pass_hat_1_ci": [
+        0.7333333333333334,
+        0.9066666666666667
+      ],
+      "pass_hat_k": 0.3333333333333333,
+      "pass_hat_k_ci": [
+        0.13333333333333333,
+        0.6
+      ],
+      "pass_at_k": 1.0,
+      "mean_actions": 1.7733,
+      "mean_turns": 2.7733,
+      "mean_tool_errors": 0.0533,
+      "mean_input_tokens": 0,
+      "mean_output_tokens": 0,
+      "mean_cost_usd": 0.0,
+      "total_cost_usd": 0.0,
+      "mean_wall_seconds": 0.0245,
+      "failure_categories": {
+        "no_effect": 13
+      },
+      "false_success_claims": 13,
+      "false_success_claim_rate": 0.18571428571428572,
+      "per_task": {
+        "add_comment": [
+          4,
+          5
+        ],
+        "bulk_reassign": [
+          2,
+          5
+        ],
+        "close_by_title": [
+          5,
+          5
+        ],
+        "close_missing_ticket": [
+          5,
+          5
+        ],
+        "create_after_validation": [
+          4,
+          5
+        ],
+        "create_basic": [
+          3,
+          5
+        ],
+        "create_full": [
+          5,
+          5
+        ],
+        "delete_by_title": [
+          5,
+          5
+        ],
+        "delete_newer_duplicate": [
+          4,
+          5
+        ],
+        "escalate": [
+          4,
+          5
+        ],
+        "fix_title_typo": [
+          4,
+          5
+        ],
+        "move_note_and_close": [
+          4,
+          5
+        ],
+        "reassign_and_prioritise": [
+          5,
+          5
+        ],
+        "search_close_matching": [
+          4,
+          5
+        ],
+        "search_count_to_comment": [
+          4,
+          5
+        ]
+      }
+    },
+    "screenshot": {
+      "runs": 75,
+      "valid_runs": 75,
+      "excluded_runs": 0,
+      "tasks": 15,
+      "tasks_with_all_k": 15,
+      "pass_hat_1": 0.9066666666666666,
+      "pass_hat_1_ci": [
+        0.8266666666666667,
+        0.9733333333333334
+      ],
+      "pass_hat_k": 0.6666666666666666,
+      "pass_hat_k_ci": [
+        0.4,
+        0.8666666666666667
+      ],
+      "pass_at_k": 1.0,
+      "mean_actions": 8.24,
+      "mean_turns": 5.9467,
+      "mean_tool_errors": 0,
+      "mean_input_tokens": 0,
+      "mean_output_tokens": 0,
+      "mean_cost_usd": 0.0,
+      "total_cost_usd": 0.0,
+      "mean_wall_seconds": 1.4439,
+      "failure_categories": {
+        "no_effect": 7
+      },
+      "false_success_claims": 7,
+      "false_success_claim_rate": 0.1,
+      "per_task": {
+        "add_comment": [
+          5,
+          5
+        ],
+        "bulk_reassign": [
+          5,
+          5
+        ],
+        "close_by_title": [
+          3,
+          5
+        ],
+        "close_missing_ticket": [
+          5,
+          5
+        ],
+        "create_after_validation": [
+          5,
+          5
+        ],
+        "create_basic": [
+          3,
+          5
+        ],
+        "create_full": [
+          4,
+          5
+        ],
+        "delete_by_title": [
+          5,
+          5
+        ],
+        "delete_newer_duplicate": [
+          5,
+          5
+        ],
+        "escalate": [
+          4,
+          5
+        ],
+        "fix_title_typo": [
+          5,
+          5
+        ],
+        "move_note_and_close": [
+          5,
+          5
+        ],
+        "reassign_and_prioritise": [
+          5,
+          5
+        ],
+        "search_close_matching": [
+          4,
+          5
+        ],
+        "search_count_to_comment": [
+          5,
+          5
+        ]
+      }
+    }
+  },
+  "total_cost_usd": 0.0
+}

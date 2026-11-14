@@ -1,0 +1,80 @@
+{
+ "task": "bulk_reassign",
+ "interface": "api",
+ "run": 3,
+ "passed": true,
+ "failure_category": null,
+ "claim": "done",
+ "stop": "finish",
+ "instruction": "Reassign to Dana every ticket that is assigned to Lee and has status open. Do not change Lee's tickets that are in progress or closed.",
+ "steps": [
+  {
+   "index": 1,
+   "name": "search_tickets",
+   "args": {
+    "assignee": "Lee",
+    "status": "open"
+   },
+   "summary": "{\"tickets\": [{\"assignee\": \"Lee\", \"created_at\": \"2026-10-06T09:00:00+00:00\", \"description\": \"Error 809 on connect.\", \"due_date\": null, \"id\": 6, \"priority\": \"medium\", \"status\": \"open\", \"title\": \"Cannot connect to VPN from home\", \"updated_at\": \"2026-10-06T09:00:00+00:00\"}, {\"assignee\": \"Lee\", \"created_at\": \"2026-10-10T09:00:00+00:00\", \"description\": \"Loudest while connected to the VPN.\", \"due_date\": null, \"id\": 10, \"priority\": \"low\", \"status\": \"open\", \"title\": \"Laptop fan is noisy\", \"updated_at\": \"2026-10-10T09:00:00+00:00\"}, {\"assignee\": \"Lee\", \"created_at\": \"2026-10-12T09:00:00+00:00\", \"description\": \"Flickers when the lamp is on.\", \"due_date\": null, \"id\": 12, \"priority\": \"medium\", \"status\": \"open\", \"title\": \"Monitor flickers at desk 14\", \"updated_at\": \"2026-10-12T09:00:00+00:00\"}, {\"assignee\": \"Lee\", \"created_at\": \"2026-10-18T09:00:00+00:00\", \"description\": \"Room C, since Tuesday.\", \"due_date\": null, \"id\": 18, \"priority\": \"medium\", \"status\": \"open\", \"title\": \"Conference phone has no dial tone\", \"updated_at\": \"2026-10-18T09:00:00+00:00\"}], \"total\": 4}",
+   "is_error": false,
+   "label": "no_change",
+   "changes": []
+  },
+  {
+   "index": 2,
+   "name": "update_ticket",
+   "args": {
+    "id": 6,
+    "assignee": "Dana"
+   },
+   "summary": "{\"assignee\": \"Dana\", \"comments\": [], \"created_at\": \"2026-10-06T09:00:00+00:00\", \"description\": \"Error 809 on connect.\", \"due_date\": null, \"id\": 6, \"priority\": \"medium\", \"status\": \"open\", \"title\": \"Cannot connect to VPN from home\", \"updated_at\": \"2026-11-14T07:08:21+00:00\"}",
+   "is_error": false,
+   "label": "in_scope",
+   "changes": [
+    "update tickets #6.assignee: 'Lee' -> 'Dana'"
+   ]
+  },
+  {
+   "index": 3,
+   "name": "update_ticket",
+   "args": {
+    "id": 10,
+    "assignee": "Dana"
+   },
+   "summary": "{\"assignee\": \"Dana\", \"comments\": [], \"created_at\": \"2026-10-10T09:00:00+00:00\", \"description\": \"Loudest while connected to the VPN.\", \"due_date\": null, \"id\": 10, \"priority\": \"low\", \"status\": \"open\", \"title\": \"Laptop fan is noisy\", \"updated_at\": \"2026-11-14T07:08:21+00:00\"}",
+   "is_error": false,
+   "label": "in_scope",
+   "changes": [
+    "update tickets #10.assignee: 'Lee' -> 'Dana'"
+   ]
+  },
+  {
+   "index": 4,
+   "name": "update_ticket",
+   "args": {
+    "id": 12,
+    "assignee": "Dana"
+   },
+   "summary": "{\"assignee\": \"Dana\", \"comments\": [], \"created_at\": \"2026-10-12T09:00:00+00:00\", \"description\": \"Flickers when the lamp is on.\", \"due_date\": null, \"id\": 12, \"priority\": \"medium\", \"status\": \"open\", \"title\": \"Monitor flickers at desk 14\", \"updated_at\": \"2026-11-14T07:08:21+00:00\"}",
+   "is_error": false,
+   "label": "in_scope",
+   "changes": [
+    "update tickets #12.assignee: 'Lee' -> 'Dana'"
+   ]
+  },
+  {
+   "index": 5,
+   "name": "update_ticket",
+   "args": {
+    "id": 18,
+    "assignee": "Dana"
+   },
+   "summary": "{\"assignee\": \"Dana\", \"comments\": [], \"created_at\": \"2026-10-18T09:00:00+00:00\", \"description\": \"Room C, since Tuesday.\", \"due_date\": null, \"id\": 18, \"priority\": \"medium\", \"status\": \"open\", \"title\": \"Conference phone has no dial tone\", \"updated_at\": \"2026-11-14T07:08:21+00:00\"}",
+   "is_error": false,
+   "label": "in_scope",
+   "changes": [
+    "update tickets #18.assignee: 'Lee' -> 'Dana'"
+   ]
+  }
+ ]
+}

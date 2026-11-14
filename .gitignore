@@ -1,0 +1,29 @@
+# virtual environments
+.venv/
+venv/
+env/
+
+# caches and build output
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+build/
+dist/
+
+# secrets
+.env
+.env.*
+
+# transient files written by the harness
+results/*.lock
+results/*.tmp
+results/**/STOP
+
+# editors and OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

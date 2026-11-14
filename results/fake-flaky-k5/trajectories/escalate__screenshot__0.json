@@ -1,0 +1,144 @@
+{
+ "task": "escalate",
+ "interface": "screenshot",
+ "run": 0,
+ "passed": true,
+ "failure_category": null,
+ "claim": "done",
+ "stop": "finish",
+ "instruction": "Escalate the ticket titled 'Standing desk motor stuck': set its priority to urgent, assign it to Sam, and add the comment 'Escalated'.",
+ "steps": [
+  {
+   "index": 1,
+   "name": "scroll",
+   "args": {
+    "dy": 725
+   },
+   "summary": "Scrolled by 725.",
+   "is_error": false,
+   "label": "no_change",
+   "changes": []
+  },
+  {
+   "index": 2,
+   "name": "click",
+   "args": {
+    "x": 173,
+    "y": 521
+   },
+   "summary": "Clicked at (173, 521).",
+   "is_error": false,
+   "label": "no_change",
+   "changes": []
+  },
+  {
+   "index": 3,
+   "name": "click",
+   "args": {
+    "x": 286,
+    "y": 581
+   },
+   "summary": "Clicked at (286, 581).",
+   "is_error": false,
+   "label": "no_change",
+   "changes": []
+  },
+  {
+   "index": 4,
+   "name": "click",
+   "args": {
+    "x": 174,
+    "y": 652
+   },
+   "summary": "Clicked at (174, 652).",
+   "is_error": false,
+   "label": "no_change",
+   "changes": []
+  },
+  {
+   "index": 5,
+   "name": "scroll",
+   "args": {
+    "dy": 398
+   },
+   "summary": "Scrolled by 398.",
+   "is_error": false,
+   "label": "no_change",
+   "changes": []
+  },
+  {
+   "index": 6,
+   "name": "click",
+   "args": {
+    "x": 87,
+    "y": 376
+   },
+   "summary": "Clicked at (87, 376).",
+   "is_error": false,
+   "label": "in_scope",
+   "changes": [
+    "update tickets #24.priority: 'medium' -> 'urgent'",
+    "update tickets #24.assignee: None -> 'Sam'"
+   ]
+  },
+  {
+   "index": 7,
+   "name": "scroll",
+   "args": {
+    "dy": 447
+   },
+   "summary": "Scrolled by 447.",
+   "is_error": false,
+   "label": "no_change",
+   "changes": []
+  },
+  {
+   "index": 8,
+   "name": "click",
+   "args": {
+    "x": 267,
+    "y": 571
+   },
+   "summary": "Clicked at (267, 571).",
+   "is_error": false,
+   "label": "no_change",
+   "changes": []
+  },
+  {
+   "index": 9,
+   "name": "key",
+   "args": {
+    "key": "Control+a"
+   },
+   "summary": "Pressed Control+a.",
+   "is_error": false,
+   "label": "no_change",
+   "changes": []
+  },
+  {
+   "index": 10,
+   "name": "type",
+   "args": {
+    "text": "Escalated"
+   },
+   "summary": "Typed text.",
+   "is_error": false,
+   "label": "no_change",
+   "changes": []
+  },
+  {
+   "index": 11,
+   "name": "click",
+   "args": {
+    "x": 85,
+    "y": 648
+   },
+   "summary": "Clicked at (85, 648).",
+   "is_error": false,
+   "label": "in_scope",
+   "changes": [
+    "insert comments #4"
+   ]
+  }
+ ]
+}

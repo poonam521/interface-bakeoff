@@ -1,0 +1,118 @@
+{
+ "task": "create_after_validation",
+ "interface": "screenshot",
+ "run": 3,
+ "passed": true,
+ "failure_category": null,
+ "claim": "done",
+ "stop": "finish",
+ "instruction": "Create a new ticket titled 'Quarterly disaster recovery backup restore test for all production file servers'. If the app refuses that title because it is too long, use the title 'Quarterly backup restore test' instead. Leave every other field at its default.",
+ "steps": [
+  {
+   "index": 1,
+   "name": "click",
+   "args": {
+    "x": 205,
+    "y": 21
+   },
+   "summary": "Clicked at (205, 21).",
+   "is_error": false,
+   "label": "no_change",
+   "changes": []
+  },
+  {
+   "index": 2,
+   "name": "click",
+   "args": {
+    "x": 267,
+    "y": 187
+   },
+   "summary": "Clicked at (267, 187).",
+   "is_error": false,
+   "label": "no_change",
+   "changes": []
+  },
+  {
+   "index": 3,
+   "name": "key",
+   "args": {
+    "key": "Control+a"
+   },
+   "summary": "Pressed Control+a.",
+   "is_error": false,
+   "label": "no_change",
+   "changes": []
+  },
+  {
+   "index": 4,
+   "name": "type",
+   "args": {
+    "text": "Quarterly disaster recovery backup restore test for all production file servers"
+   },
+   "summary": "Typed text.",
+   "is_error": false,
+   "label": "no_change",
+   "changes": []
+  },
+  {
+   "index": 5,
+   "name": "click",
+   "args": {
+    "x": 81,
+    "y": 640
+   },
+   "summary": "Clicked at (81, 640).",
+   "is_error": false,
+   "label": "no_change",
+   "changes": []
+  },
+  {
+   "index": 6,
+   "name": "click",
+   "args": {
+    "x": 267,
+    "y": 235
+   },
+   "summary": "Clicked at (267, 235).",
+   "is_error": false,
+   "label": "no_change",
+   "changes": []
+  },
+  {
+   "index": 7,
+   "name": "key",
+   "args": {
+    "key": "Control+a"
+   },
+   "summary": "Pressed Control+a.",
+   "is_error": false,
+   "label": "no_change",
+   "changes": []
+  },
+  {
+   "index": 8,
+   "name": "type",
+   "args": {
+    "text": "Quarterly backup restore test"
+   },
+   "summary": "Typed text.",
+   "is_error": false,
+   "label": "no_change",
+   "changes": []
+  },
+  {
+   "index": 9,
+   "name": "click",
+   "args": {
+    "x": 81,
+    "y": 688
+   },
+   "summary": "Clicked at (81, 688).",
+   "is_error": false,
+   "label": "in_scope",
+   "changes": [
+    "insert tickets #31"
+   ]
+  }
+ ]
+}

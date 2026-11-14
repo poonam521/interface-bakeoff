@@ -1,0 +1,29 @@
+{
+ "task": "create_full",
+ "interface": "api",
+ "run": 1,
+ "passed": true,
+ "failure_category": null,
+ "claim": "done",
+ "stop": "finish",
+ "instruction": "Create a new ticket with title 'Order ergonomic chair', description 'For desk 22, mesh back.', priority high, assignee Priya and due date 2026-12-01.",
+ "steps": [
+  {
+   "index": 1,
+   "name": "create_ticket",
+   "args": {
+    "title": "Order ergonomic chair",
+    "description": "For desk 22, mesh back.",
+    "priority": "high",
+    "assignee": "Priya",
+    "due_date": "2026-12-01"
+   },
+   "summary": "{\"assignee\": \"Priya\", \"comments\": [], \"created_at\": \"2026-11-14T07:08:05+00:00\", \"description\": \"For desk 22, mesh back.\", \"due_date\": \"2026-12-01\", \"id\": 31, \"priority\": \"high\", \"status\": \"open\", \"title\": \"Order ergonomic chair\", \"updated_at\": \"2026-11-14T07:08:05+00:00\"}",
+   "is_error": false,
+   "label": "in_scope",
+   "changes": [
+    "insert tickets #31"
+   ]
+  }
+ ]
+}

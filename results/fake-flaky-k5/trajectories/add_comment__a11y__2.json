@@ -1,0 +1,48 @@
+{
+ "task": "add_comment",
+ "interface": "a11y",
+ "run": 2,
+ "passed": true,
+ "failure_category": null,
+ "claim": "done",
+ "stop": "finish",
+ "instruction": "Add the comment 'Licence key sent by email.' to the ticket titled 'Install design software for Priya'.",
+ "steps": [
+  {
+   "index": 1,
+   "name": "click",
+   "args": {
+    "ref": "e25"
+   },
+   "summary": "Clicked e25.",
+   "is_error": false,
+   "label": "no_change",
+   "changes": []
+  },
+  {
+   "index": 2,
+   "name": "fill",
+   "args": {
+    "ref": "e19",
+    "text": "Licence key sent by email."
+   },
+   "summary": "Filled e19.",
+   "is_error": false,
+   "label": "no_change",
+   "changes": []
+  },
+  {
+   "index": 3,
+   "name": "click",
+   "args": {
+    "ref": "e20"
+   },
+   "summary": "Clicked e20.",
+   "is_error": false,
+   "label": "in_scope",
+   "changes": [
+    "insert comments #4"
+   ]
+  }
+ ]
+}

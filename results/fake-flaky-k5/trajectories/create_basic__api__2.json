@@ -1,0 +1,25 @@
+{
+ "task": "create_basic",
+ "interface": "api",
+ "run": 2,
+ "passed": true,
+ "failure_category": null,
+ "claim": "done",
+ "stop": "finish",
+ "instruction": "Create a new ticket titled 'Coffee machine leaks water'. Leave every other field at its default.",
+ "steps": [
+  {
+   "index": 1,
+   "name": "create_ticket",
+   "args": {
+    "title": "Coffee machine leaks water"
+   },
+   "summary": "{\"assignee\": null, \"comments\": [], \"created_at\": \"2026-11-14T07:08:09+00:00\", \"description\": \"\", \"due_date\": null, \"id\": 31, \"priority\": \"medium\", \"status\": \"open\", \"title\": \"Coffee machine leaks water\", \"updated_at\": \"2026-11-14T07:08:09+00:00\"}",
+   "is_error": false,
+   "label": "in_scope",
+   "changes": [
+    "insert tickets #31"
+   ]
+  }
+ ]
+}

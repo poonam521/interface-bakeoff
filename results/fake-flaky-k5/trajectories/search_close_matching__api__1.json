@@ -1,0 +1,66 @@
+{
+ "task": "search_close_matching",
+ "interface": "api",
+ "run": 1,
+ "passed": true,
+ "failure_category": null,
+ "claim": "done",
+ "stop": "finish",
+ "instruction": "Close every ticket that has status open and whose title contains 'VPN'. Do not change any other ticket.",
+ "steps": [
+  {
+   "index": 1,
+   "name": "search_tickets",
+   "args": {
+    "q": "VPN",
+    "status": "open"
+   },
+   "summary": "{\"tickets\": [{\"assignee\": \"Sam\", \"created_at\": \"2026-10-02T09:00:00+00:00\", \"description\": \"Disconnects roughly every 60 minutes.\", \"due_date\": null, \"id\": 2, \"priority\": \"high\", \"status\": \"open\", \"title\": \"VPN drops every hour\", \"updated_at\": \"2026-10-02T09:00:00+00:00\"}, {\"assignee\": \"Lee\", \"created_at\": \"2026-10-06T09:00:00+00:00\", \"description\": \"Error 809 on connect.\", \"due_date\": null, \"id\": 6, \"priority\": \"medium\", \"status\": \"open\", \"title\": \"Cannot connect to VPN from home\", \"updated_at\": \"2026-10-06T09:00:00+00:00\"}, {\"assignee\": \"Lee\", \"created_at\": \"2026-10-10T09:00:00+00:00\", \"description\": \"Loudest while connected to the VPN.\", \"due_date\": null, \"id\": 10, \"priority\": \"low\", \"status\": \"open\", \"title\": \"Laptop fan is noisy\", \"updated_at\": \"2026-10-10T09:00:00+00:00\"}, {\"assignee\": null, \"created_at\": \"2026-10-11T09:00:00+00:00\", \"description\": \"Needed for six weeks.\", \"due_date\": null, \"id\": 11, \"priority\": \"low\", \"status\": \"open\", \"title\": \"Request: VPN access for contractor\", \"updated_at\": \"2026-10-11T09:00:00+00:00\"}], \"total\": 4}",
+   "is_error": false,
+   "label": "no_change",
+   "changes": []
+  },
+  {
+   "index": 2,
+   "name": "update_ticket",
+   "args": {
+    "id": 2,
+    "status": "closed"
+   },
+   "summary": "{\"assignee\": \"Sam\", \"comments\": [{\"author\": \"Sam\", \"body\": \"Also affects the Leeds office.\", \"created_at\": \"2026-10-21T09:00:00+00:00\", \"id\": 1, \"ticket_id\": 2}], \"created_at\": \"2026-10-02T09:00:00+00:00\", \"description\": \"Disconnects roughly every 60 minutes.\", \"due_date\": null, \"id\": 2, \"priority\": \"high\", \"status\": \"closed\", \"title\": \"VPN drops every hour\", \"updated_at\": \"2026-11-14T07:08:05+00:00\"}",
+   "is_error": false,
+   "label": "in_scope",
+   "changes": [
+    "update tickets #2.status: 'open' -> 'closed'"
+   ]
+  },
+  {
+   "index": 3,
+   "name": "update_ticket",
+   "args": {
+    "id": 6,
+    "status": "closed"
+   },
+   "summary": "{\"assignee\": \"Lee\", \"comments\": [], \"created_at\": \"2026-10-06T09:00:00+00:00\", \"description\": \"Error 809 on connect.\", \"due_date\": null, \"id\": 6, \"priority\": \"medium\", \"status\": \"closed\", \"title\": \"Cannot connect to VPN from home\", \"updated_at\": \"2026-11-14T07:08:05+00:00\"}",
+   "is_error": false,
+   "label": "in_scope",
+   "changes": [
+    "update tickets #6.status: 'open' -> 'closed'"
+   ]
+  },
+  {
+   "index": 4,
+   "name": "update_ticket",
+   "args": {
+    "id": 11,
+    "status": "closed"
+   },
+   "summary": "{\"assignee\": null, \"comments\": [], \"created_at\": \"2026-10-11T09:00:00+00:00\", \"description\": \"Needed for six weeks.\", \"due_date\": null, \"id\": 11, \"priority\": \"low\", \"status\": \"closed\", \"title\": \"Request: VPN access for contractor\", \"updated_at\": \"2026-11-14T07:08:05+00:00\"}",
+   "is_error": false,
+   "label": "in_scope",
+   "changes": [
+    "update tickets #11.status: 'open' -> 'closed'"
+   ]
+  }
+ ]
+}

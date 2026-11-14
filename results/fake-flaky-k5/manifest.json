@@ -1,0 +1,39 @@
+{
+  "started": "2026-11-14T07:07:34+00:00",
+  "agent": {
+    "agent": "fake",
+    "mode": "flaky",
+    "fail_rate": 0.15,
+    "seed": 0
+  },
+  "tasks": [
+    "create_basic",
+    "create_full",
+    "create_after_validation",
+    "close_by_title",
+    "reassign_and_prioritise",
+    "fix_title_typo",
+    "add_comment",
+    "escalate",
+    "move_note_and_close",
+    "bulk_reassign",
+    "search_close_matching",
+    "search_count_to_comment",
+    "delete_by_title",
+    "delete_newer_duplicate",
+    "close_missing_ticket"
+  ],
+  "interfaces": [
+    "screenshot",
+    "a11y",
+    "api"
+  ],
+  "k": 5,
+  "workers": 3,
+  "max_turns": 20,
+  "git_commit": null,
+  "ended": "2026-11-14T07:08:45+00:00",
+  "runs_recorded": 225,
+  "runs_planned": 225,
+  "stop_reason": null
+}

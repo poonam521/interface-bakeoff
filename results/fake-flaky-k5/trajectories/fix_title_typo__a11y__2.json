@@ -1,0 +1,48 @@
+{
+ "task": "fix_title_typo",
+ "interface": "a11y",
+ "run": 2,
+ "passed": true,
+ "failure_category": null,
+ "claim": "done",
+ "stop": "finish",
+ "instruction": "The ticket titled 'Email signiture is wrong' has a spelling mistake. Change its title to 'Email signature is wrong'.",
+ "steps": [
+  {
+   "index": 1,
+   "name": "click",
+   "args": {
+    "ref": "e15"
+   },
+   "summary": "Clicked e15.",
+   "is_error": false,
+   "label": "no_change",
+   "changes": []
+  },
+  {
+   "index": 2,
+   "name": "fill",
+   "args": {
+    "ref": "e3",
+    "text": "Email signature is wrong"
+   },
+   "summary": "Filled e3.",
+   "is_error": false,
+   "label": "no_change",
+   "changes": []
+  },
+  {
+   "index": 3,
+   "name": "click",
+   "args": {
+    "ref": "e18"
+   },
+   "summary": "Clicked e18.",
+   "is_error": false,
+   "label": "in_scope",
+   "changes": [
+    "update tickets #7.title: 'Email signiture is wrong' -> 'Email signature is wrong'"
+   ]
+  }
+ ]
+}

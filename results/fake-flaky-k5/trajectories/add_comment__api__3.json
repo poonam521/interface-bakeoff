@@ -1,0 +1,37 @@
+{
+ "task": "add_comment",
+ "interface": "api",
+ "run": 3,
+ "passed": true,
+ "failure_category": null,
+ "claim": "done",
+ "stop": "finish",
+ "instruction": "Add the comment 'Licence key sent by email.' to the ticket titled 'Install design software for Priya'.",
+ "steps": [
+  {
+   "index": 1,
+   "name": "search_tickets",
+   "args": {
+    "q": "Install design software"
+   },
+   "summary": "{\"tickets\": [{\"assignee\": \"Priya\", \"created_at\": \"2026-10-17T09:00:00+00:00\", \"description\": \"Licence already bought.\", \"due_date\": null, \"id\": 17, \"priority\": \"medium\", \"status\": \"open\", \"title\": \"Install design software for Priya\", \"updated_at\": \"2026-10-17T09:00:00+00:00\"}], \"total\": 1}",
+   "is_error": false,
+   "label": "no_change",
+   "changes": []
+  },
+  {
+   "index": 2,
+   "name": "add_comment",
+   "args": {
+    "id": 17,
+    "body": "Licence key sent by email."
+   },
+   "summary": "{\"author\": \"agent\", \"body\": \"Licence key sent by email.\", \"created_at\": \"2026-11-14T07:08:21+00:00\", \"id\": 4, \"ticket_id\": 17}",
+   "is_error": false,
+   "label": "in_scope",
+   "changes": [
+    "insert comments #4"
+   ]
+  }
+ ]
+}

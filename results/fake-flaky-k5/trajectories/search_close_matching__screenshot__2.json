@@ -1,0 +1,252 @@
+{
+ "task": "search_close_matching",
+ "interface": "screenshot",
+ "run": 2,
+ "passed": true,
+ "failure_category": null,
+ "claim": "done",
+ "stop": "finish",
+ "instruction": "Close every ticket that has status open and whose title contains 'VPN'. Do not change any other ticket.",
+ "steps": [
+  {
+   "index": 1,
+   "name": "click",
+   "args": {
+    "x": 267,
+    "y": 187
+   },
+   "summary": "Clicked at (267, 187).",
+   "is_error": false,
+   "label": "no_change",
+   "changes": []
+  },
+  {
+   "index": 2,
+   "name": "key",
+   "args": {
+    "key": "Control+a"
+   },
+   "summary": "Pressed Control+a.",
+   "is_error": false,
+   "label": "no_change",
+   "changes": []
+  },
+  {
+   "index": 3,
+   "name": "type",
+   "args": {
+    "text": "VPN"
+   },
+   "summary": "Typed text.",
+   "is_error": false,
+   "label": "no_change",
+   "changes": []
+  },
+  {
+   "index": 4,
+   "name": "click",
+   "args": {
+    "x": 61,
+    "y": 305
+   },
+   "summary": "Clicked at (61, 305).",
+   "is_error": false,
+   "label": "no_change",
+   "changes": []
+  },
+  {
+   "index": 5,
+   "name": "click",
+   "args": {
+    "x": 161,
+    "y": 432
+   },
+   "summary": "Clicked at (161, 432).",
+   "is_error": false,
+   "label": "no_change",
+   "changes": []
+  },
+  {
+   "index": 6,
+   "name": "click",
+   "args": {
+    "x": 251,
+    "y": 509
+   },
+   "summary": "Clicked at (251, 509).",
+   "is_error": false,
+   "label": "no_change",
+   "changes": []
+  },
+  {
+   "index": 7,
+   "name": "scroll",
+   "args": {
+    "dy": 398
+   },
+   "summary": "Scrolled by 398.",
+   "is_error": false,
+   "label": "no_change",
+   "changes": []
+  },
+  {
+   "index": 8,
+   "name": "click",
+   "args": {
+    "x": 87,
+    "y": 376
+   },
+   "summary": "Clicked at (87, 376).",
+   "is_error": false,
+   "label": "in_scope",
+   "changes": [
+    "update tickets #2.status: 'open' -> 'closed'"
+   ]
+  },
+  {
+   "index": 9,
+   "name": "click",
+   "args": {
+    "x": 80,
+    "y": 21
+   },
+   "summary": "Clicked at (80, 21).",
+   "is_error": false,
+   "label": "no_change",
+   "changes": []
+  },
+  {
+   "index": 10,
+   "name": "click",
+   "args": {
+    "x": 203,
+    "y": 609
+   },
+   "summary": "Clicked at (203, 609).",
+   "is_error": false,
+   "label": "no_change",
+   "changes": []
+  },
+  {
+   "index": 11,
+   "name": "click",
+   "args": {
+    "x": 251,
+    "y": 509
+   },
+   "summary": "Clicked at (251, 509).",
+   "is_error": false,
+   "label": "no_change",
+   "changes": []
+  },
+  {
+   "index": 12,
+   "name": "scroll",
+   "args": {
+    "dy": 398
+   },
+   "summary": "Scrolled by 398.",
+   "is_error": false,
+   "label": "no_change",
+   "changes": []
+  },
+  {
+   "index": 13,
+   "name": "click",
+   "args": {
+    "x": 87,
+    "y": 376
+   },
+   "summary": "Clicked at (87, 376).",
+   "is_error": false,
+   "label": "in_scope",
+   "changes": [
+    "update tickets #6.status: 'open' -> 'closed'"
+   ]
+  },
+  {
+   "index": 14,
+   "name": "click",
+   "args": {
+    "x": 80,
+    "y": 21
+   },
+   "summary": "Clicked at (80, 21).",
+   "is_error": false,
+   "label": "no_change",
+   "changes": []
+  },
+  {
+   "index": 15,
+   "name": "scroll",
+   "args": {
+    "dy": 577
+   },
+   "summary": "Scrolled by 577.",
+   "is_error": false,
+   "label": "no_change",
+   "changes": []
+  },
+  {
+   "index": 16,
+   "name": "click",
+   "args": {
+    "x": 206,
+    "y": 209
+   },
+   "summary": "Clicked at (206, 209).",
+   "is_error": false,
+   "label": "no_change",
+   "changes": []
+  },
+  {
+   "index": 17,
+   "name": "click",
+   "args": {
+    "x": 251,
+    "y": 509
+   },
+   "summary": "Clicked at (251, 509).",
+   "is_error": false,
+   "label": "no_change",
+   "changes": []
+  },
+  {
+   "index": 18,
+   "name": "scroll",
+   "args": {
+    "dy": 398
+   },
+   "summary": "Scrolled by 398.",
+   "is_error": false,
+   "label": "no_change",
+   "changes": []
+  },
+  {
+   "index": 19,
+   "name": "click",
+   "args": {
+    "x": 87,
+    "y": 376
+   },
+   "summary": "Clicked at (87, 376).",
+   "is_error": false,
+   "label": "in_scope",
+   "changes": [
+    "update tickets #11.status: 'open' -> 'closed'"
+   ]
+  },
+  {
+   "index": 20,
+   "name": "click",
+   "args": {
+    "x": 80,
+    "y": 21
+   },
+   "summary": "Clicked at (80, 21).",
+   "is_error": false,
+   "label": "no_change",
+   "changes": []
+  }
+ ]
+}

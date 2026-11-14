@@ -1,0 +1,94 @@
+{
+ "task": "create_full",
+ "interface": "a11y",
+ "run": 4,
+ "passed": true,
+ "failure_category": null,
+ "claim": "done",
+ "stop": "finish",
+ "instruction": "Create a new ticket with title 'Order ergonomic chair', description 'For desk 22, mesh back.', priority high, assignee Priya and due date 2026-12-01.",
+ "steps": [
+  {
+   "index": 1,
+   "name": "click",
+   "args": {
+    "ref": "e2"
+   },
+   "summary": "Clicked e2.",
+   "is_error": false,
+   "label": "no_change",
+   "changes": []
+  },
+  {
+   "index": 2,
+   "name": "fill",
+   "args": {
+    "ref": "e3",
+    "text": "Order ergonomic chair"
+   },
+   "summary": "Filled e3.",
+   "is_error": false,
+   "label": "no_change",
+   "changes": []
+  },
+  {
+   "index": 3,
+   "name": "fill",
+   "args": {
+    "ref": "e4",
+    "text": "For desk 22, mesh back."
+   },
+   "summary": "Filled e4.",
+   "is_error": false,
+   "label": "no_change",
+   "changes": []
+  },
+  {
+   "index": 4,
+   "name": "click",
+   "args": {
+    "ref": "e10"
+   },
+   "summary": "Clicked e10.",
+   "is_error": false,
+   "label": "no_change",
+   "changes": []
+  },
+  {
+   "index": 5,
+   "name": "click",
+   "args": {
+    "ref": "e16"
+   },
+   "summary": "Clicked e16.",
+   "is_error": false,
+   "label": "no_change",
+   "changes": []
+  },
+  {
+   "index": 6,
+   "name": "fill",
+   "args": {
+    "ref": "e17",
+    "text": "2026-12-01"
+   },
+   "summary": "Filled e17.",
+   "is_error": false,
+   "label": "no_change",
+   "changes": []
+  },
+  {
+   "index": 7,
+   "name": "click",
+   "args": {
+    "ref": "e18"
+   },
+   "summary": "Clicked e18.",
+   "is_error": false,
+   "label": "in_scope",
+   "changes": [
+    "insert tickets #31"
+   ]
+  }
+ ]
+}

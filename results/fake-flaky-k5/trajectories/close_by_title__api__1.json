@@ -1,0 +1,37 @@
+{
+ "task": "close_by_title",
+ "interface": "api",
+ "run": 1,
+ "passed": true,
+ "failure_category": null,
+ "claim": "done",
+ "stop": "finish",
+ "instruction": "Close the ticket titled 'Printer on floor 2 is jammed' (set its status to closed).",
+ "steps": [
+  {
+   "index": 1,
+   "name": "search_tickets",
+   "args": {
+    "q": "Printer on floor 2"
+   },
+   "summary": "{\"tickets\": [{\"assignee\": null, \"created_at\": \"2026-10-01T09:00:00+00:00\", \"description\": \"Paper stuck in tray 2.\", \"due_date\": null, \"id\": 1, \"priority\": \"low\", \"status\": \"open\", \"title\": \"Printer on floor 2 is jammed\", \"updated_at\": \"2026-10-01T09:00:00+00:00\"}], \"total\": 1}",
+   "is_error": false,
+   "label": "no_change",
+   "changes": []
+  },
+  {
+   "index": 2,
+   "name": "update_ticket",
+   "args": {
+    "id": 1,
+    "status": "closed"
+   },
+   "summary": "{\"assignee\": null, \"comments\": [], \"created_at\": \"2026-10-01T09:00:00+00:00\", \"description\": \"Paper stuck in tray 2.\", \"due_date\": null, \"id\": 1, \"priority\": \"low\", \"status\": \"closed\", \"title\": \"Printer on floor 2 is jammed\", \"updated_at\": \"2026-11-14T07:07:57+00:00\"}",
+   "is_error": false,
+   "label": "in_scope",
+   "changes": [
+    "update tickets #1.status: 'open' -> 'closed'"
+   ]
+  }
+ ]
+}

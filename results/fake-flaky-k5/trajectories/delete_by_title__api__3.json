@@ -1,0 +1,37 @@
+{
+ "task": "delete_by_title",
+ "interface": "api",
+ "run": 3,
+ "passed": true,
+ "failure_category": null,
+ "claim": "done",
+ "stop": "finish",
+ "instruction": "Delete the ticket titled 'Desk phone voicemail is full'.",
+ "steps": [
+  {
+   "index": 1,
+   "name": "search_tickets",
+   "args": {
+    "q": "voicemail"
+   },
+   "summary": "{\"tickets\": [{\"assignee\": \"Priya\", \"created_at\": \"2026-10-23T09:00:00+00:00\", \"description\": \"Cannot receive new messages.\", \"due_date\": null, \"id\": 23, \"priority\": \"low\", \"status\": \"open\", \"title\": \"Desk phone voicemail is full\", \"updated_at\": \"2026-10-23T09:00:00+00:00\"}], \"total\": 1}",
+   "is_error": false,
+   "label": "no_change",
+   "changes": []
+  },
+  {
+   "index": 2,
+   "name": "delete_ticket",
+   "args": {
+    "id": 23
+   },
+   "summary": "{\"deleted\": 23}",
+   "is_error": false,
+   "label": "in_scope",
+   "changes": [
+    "delete comments #2",
+    "delete tickets #23"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,125 @@
+{
+  "config": {
+    "seeds": 20,
+    "injection_rate": 0.5,
+    "tasks": 15,
+    "faults": [
+      "stale_read",
+      "phantom_write",
+      "wrong_record",
+      "truncated_list",
+      "field_corrupt",
+      "count_mismatch"
+    ]
+  },
+  "tier1_invariants": {
+    "injected": 407,
+    "caught_same_call": 179,
+    "caught_delayed": 59,
+    "missed": 169,
+    "clean_calls": 593,
+    "false_positives": 1,
+    "precision": 0.99581589958159,
+    "recall": 0.5847665847665847,
+    "recall_same_call": 0.4398034398034398,
+    "false_positive_rate": 0.0016863406408094434,
+    "per_fault": {
+      "count_mismatch": {
+        "injected": 55,
+        "caught": 55,
+        "caught_delayed": 0,
+        "recall": 1.0
+      },
+      "field_corrupt": {
+        "injected": 119,
+        "caught": 45,
+        "caught_delayed": 11,
+        "recall": 0.47058823529411764
+      },
+      "phantom_write": {
+        "injected": 124,
+        "caught": 0,
+        "caught_delayed": 43,
+        "recall": 0.3467741935483871
+      },
+      "stale_read": {
+        "injected": 16,
+        "caught": 16,
+        "caught_delayed": 0,
+        "recall": 1.0
+      },
+      "truncated_list": {
+        "injected": 15,
+        "caught": 0,
+        "caught_delayed": 5,
+        "recall": 0.3333333333333333
+      },
+      "wrong_record": {
+        "injected": 78,
+        "caught": 63,
+        "caught_delayed": 0,
+        "recall": 0.8076923076923077
+      }
+    }
+  },
+  "tier1_plus_crosschecks": {
+    "injected": 407,
+    "caught_same_call": 407,
+    "caught_delayed": 0,
+    "missed": 0,
+    "clean_calls": 593,
+    "false_positives": 0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "recall_same_call": 1.0,
+    "false_positive_rate": 0.0,
+    "per_fault": {
+      "count_mismatch": {
+        "injected": 55,
+        "caught": 55,
+        "caught_delayed": 0,
+        "recall": 1.0
+      },
+      "field_corrupt": {
+        "injected": 119,
+        "caught": 119,
+        "caught_delayed": 0,
+        "recall": 1.0
+      },
+      "phantom_write": {
+        "injected": 124,
+        "caught": 124,
+        "caught_delayed": 0,
+        "recall": 1.0
+      },
+      "stale_read": {
+        "injected": 16,
+        "caught": 16,
+        "caught_delayed": 0,
+        "recall": 1.0
+      },
+      "truncated_list": {
+        "injected": 15,
+        "caught": 15,
+        "caught_delayed": 0,
+        "recall": 1.0
+      },
+      "wrong_record": {
+        "injected": 78,
+        "caught": 78,
+        "caught_delayed": 0,
+        "recall": 1.0
+      }
+    }
+  },
+  "clean_traces": {
+    "calls": 50,
+    "flagged_tier1": 0,
+    "flagged_tier1_plus_2": 0
+  },
+  "crosscheck_overhead": {
+    "agent_calls": 1000,
+    "probe_calls": 860,
+    "probes_per_call": 0.86
+  }
+}

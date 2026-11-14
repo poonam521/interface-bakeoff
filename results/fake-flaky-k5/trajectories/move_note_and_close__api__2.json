@@ -1,0 +1,51 @@
+{
+ "task": "move_note_and_close",
+ "interface": "api",
+ "run": 2,
+ "passed": true,
+ "failure_category": null,
+ "claim": "done",
+ "stop": "finish",
+ "instruction": "Copy the description of the ticket titled 'Old server room key is missing' into a new comment on the ticket titled 'Audit of server room access'. The comment must be exactly that description text. Then close the ticket titled 'Old server room key is missing'.",
+ "steps": [
+  {
+   "index": 1,
+   "name": "get_ticket",
+   "args": {
+    "id": 25
+   },
+   "summary": "{\"assignee\": \"Dana\", \"comments\": [], \"created_at\": \"2026-10-25T09:00:00+00:00\", \"description\": \"Key was last signed out by facilities on 3 March.\", \"due_date\": null, \"id\": 25, \"priority\": \"medium\", \"status\": \"open\", \"title\": \"Old server room key is missing\", \"updated_at\": \"2026-10-25T09:00:00+00:00\"}",
+   "is_error": false,
+   "label": "no_change",
+   "changes": []
+  },
+  {
+   "index": 2,
+   "name": "add_comment",
+   "args": {
+    "id": 26,
+    "body": "Key was last signed out by facilities on 3 March."
+   },
+   "summary": "{\"author\": \"agent\", \"body\": \"Key was last signed out by facilities on 3 March.\", \"created_at\": \"2026-11-14T07:08:04+00:00\", \"id\": 4, \"ticket_id\": 26}",
+   "is_error": false,
+   "label": "in_scope",
+   "changes": [
+    "insert comments #4"
+   ]
+  },
+  {
+   "index": 3,
+   "name": "update_ticket",
+   "args": {
+    "id": 25,
+    "status": "closed"
+   },
+   "summary": "{\"assignee\": \"Dana\", \"comments\": [], \"created_at\": \"2026-10-25T09:00:00+00:00\", \"description\": \"Key was last signed out by facilities on 3 March.\", \"due_date\": null, \"id\": 25, \"priority\": \"medium\", \"status\": \"closed\", \"title\": \"Old server room key is missing\", \"updated_at\": \"2026-11-14T07:08:04+00:00\"}",
+   "is_error": false,
+   "label": "in_scope",
+   "changes": [
+    "update tickets #25.status: 'open' -> 'closed'"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,47 @@
+{
+ "task": "delete_newer_duplicate",
+ "interface": "a11y",
+ "run": 2,
+ "passed": true,
+ "failure_category": null,
+ "claim": "done",
+ "stop": "finish",
+ "instruction": "Two tickets are both titled 'Replace toner in printer 3'. Delete the one that was created later and keep the older one.",
+ "steps": [
+  {
+   "index": 1,
+   "name": "click",
+   "args": {
+    "ref": "e35"
+   },
+   "summary": "Clicked e35.",
+   "is_error": false,
+   "label": "no_change",
+   "changes": []
+  },
+  {
+   "index": 2,
+   "name": "click",
+   "args": {
+    "ref": "e21"
+   },
+   "summary": "Clicked e21.",
+   "is_error": false,
+   "label": "no_change",
+   "changes": []
+  },
+  {
+   "index": 3,
+   "name": "click",
+   "args": {
+    "ref": "e3"
+   },
+   "summary": "Clicked e3.",
+   "is_error": false,
+   "label": "in_scope",
+   "changes": [
+    "delete tickets #27"
+   ]
+  }
+ ]
+}

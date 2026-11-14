@@ -1,0 +1,23 @@
+{
+ "task": "close_missing_ticket",
+ "interface": "api",
+ "run": 3,
+ "passed": true,
+ "failure_category": null,
+ "claim": "impossible",
+ "stop": "finish",
+ "instruction": "Close the ticket titled 'Fax machine out of paper' (set its status to closed).",
+ "steps": [
+  {
+   "index": 1,
+   "name": "search_tickets",
+   "args": {
+    "q": "Fax machine"
+   },
+   "summary": "{\"tickets\": [], \"total\": 0}",
+   "is_error": false,
+   "label": "no_change",
+   "changes": []
+  }
+ ]
+}

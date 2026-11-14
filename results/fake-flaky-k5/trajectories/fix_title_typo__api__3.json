@@ -1,0 +1,37 @@
+{
+ "task": "fix_title_typo",
+ "interface": "api",
+ "run": 3,
+ "passed": true,
+ "failure_category": null,
+ "claim": "done",
+ "stop": "finish",
+ "instruction": "The ticket titled 'Email signiture is wrong' has a spelling mistake. Change its title to 'Email signature is wrong'.",
+ "steps": [
+  {
+   "index": 1,
+   "name": "search_tickets",
+   "args": {
+    "q": "signiture"
+   },
+   "summary": "{\"tickets\": [{\"assignee\": \"Priya\", \"created_at\": \"2026-10-07T09:00:00+00:00\", \"description\": \"Shows the old office address.\", \"due_date\": null, \"id\": 7, \"priority\": \"low\", \"status\": \"open\", \"title\": \"Email signiture is wrong\", \"updated_at\": \"2026-10-07T09:00:00+00:00\"}], \"total\": 1}",
+   "is_error": false,
+   "label": "no_change",
+   "changes": []
+  },
+  {
+   "index": 2,
+   "name": "update_ticket",
+   "args": {
+    "id": 7,
+    "title": "Email signature is wrong"
+   },
+   "summary": "{\"assignee\": \"Priya\", \"comments\": [], \"created_at\": \"2026-10-07T09:00:00+00:00\", \"description\": \"Shows the old office address.\", \"due_date\": null, \"id\": 7, \"priority\": \"low\", \"status\": \"open\", \"title\": \"Email signature is wrong\", \"updated_at\": \"2026-11-14T07:08:14+00:00\"}",
+   "is_error": false,
+   "label": "in_scope",
+   "changes": [
+    "update tickets #7.title: 'Email signiture is wrong' -> 'Email signature is wrong'"
+   ]
+  }
+ ]
+}

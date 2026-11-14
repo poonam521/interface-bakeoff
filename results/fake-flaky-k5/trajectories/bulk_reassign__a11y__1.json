@@ -1,0 +1,196 @@
+{
+ "task": "bulk_reassign",
+ "interface": "a11y",
+ "run": 1,
+ "passed": true,
+ "failure_category": null,
+ "claim": "done",
+ "stop": "finish",
+ "instruction": "Reassign to Dana every ticket that is assigned to Lee and has status open. Do not change Lee's tickets that are in progress or closed.",
+ "steps": [
+  {
+   "index": 1,
+   "name": "click",
+   "args": {
+    "ref": "e14"
+   },
+   "summary": "Clicked e14.",
+   "is_error": false,
+   "label": "no_change",
+   "changes": []
+  },
+  {
+   "index": 2,
+   "name": "click",
+   "args": {
+    "ref": "e14"
+   },
+   "summary": "Clicked e14.",
+   "is_error": false,
+   "label": "no_change",
+   "changes": []
+  },
+  {
+   "index": 3,
+   "name": "click",
+   "args": {
+    "ref": "e18"
+   },
+   "summary": "Clicked e18.",
+   "is_error": false,
+   "label": "in_scope",
+   "changes": [
+    "update tickets #6.assignee: 'Lee' -> 'Dana'"
+   ]
+  },
+  {
+   "index": 4,
+   "name": "click",
+   "args": {
+    "ref": "e1"
+   },
+   "summary": "Clicked e1.",
+   "is_error": false,
+   "label": "no_change",
+   "changes": []
+  },
+  {
+   "index": 5,
+   "name": "click",
+   "args": {
+    "ref": "e18"
+   },
+   "summary": "Clicked e18.",
+   "is_error": false,
+   "label": "no_change",
+   "changes": []
+  },
+  {
+   "index": 6,
+   "name": "click",
+   "args": {
+    "ref": "e14"
+   },
+   "summary": "Clicked e14.",
+   "is_error": false,
+   "label": "no_change",
+   "changes": []
+  },
+  {
+   "index": 7,
+   "name": "click",
+   "args": {
+    "ref": "e18"
+   },
+   "summary": "Clicked e18.",
+   "is_error": false,
+   "label": "in_scope",
+   "changes": [
+    "update tickets #10.assignee: 'Lee' -> 'Dana'"
+   ]
+  },
+  {
+   "index": 8,
+   "name": "click",
+   "args": {
+    "ref": "e1"
+   },
+   "summary": "Clicked e1.",
+   "is_error": false,
+   "label": "no_change",
+   "changes": []
+  },
+  {
+   "index": 9,
+   "name": "click",
+   "args": {
+    "ref": "e20"
+   },
+   "summary": "Clicked e20.",
+   "is_error": false,
+   "label": "no_change",
+   "changes": []
+  },
+  {
+   "index": 10,
+   "name": "click",
+   "args": {
+    "ref": "e14"
+   },
+   "summary": "Clicked e14.",
+   "is_error": false,
+   "label": "no_change",
+   "changes": []
+  },
+  {
+   "index": 11,
+   "name": "click",
+   "args": {
+    "ref": "e18"
+   },
+   "summary": "Clicked e18.",
+   "is_error": false,
+   "label": "in_scope",
+   "changes": [
+    "update tickets #12.assignee: 'Lee' -> 'Dana'"
+   ]
+  },
+  {
+   "index": 12,
+   "name": "click",
+   "args": {
+    "ref": "e1"
+   },
+   "summary": "Clicked e1.",
+   "is_error": false,
+   "label": "no_change",
+   "changes": []
+  },
+  {
+   "index": 13,
+   "name": "click",
+   "args": {
+    "ref": "e26"
+   },
+   "summary": "Clicked e26.",
+   "is_error": false,
+   "label": "no_change",
+   "changes": []
+  },
+  {
+   "index": 14,
+   "name": "click",
+   "args": {
+    "ref": "e14"
+   },
+   "summary": "Clicked e14.",
+   "is_error": false,
+   "label": "no_change",
+   "changes": []
+  },
+  {
+   "index": 15,
+   "name": "click",
+   "args": {
+    "ref": "e18"
+   },
+   "summary": "Clicked e18.",
+   "is_error": false,
+   "label": "in_scope",
+   "changes": [
+    "update tickets #18.assignee: 'Lee' -> 'Dana'"
+   ]
+  },
+  {
+   "index": 16,
+   "name": "click",
+   "args": {
+    "ref": "e1"
+   },
+   "summary": "Clicked e1.",
+   "is_error": false,
+   "label": "no_change",
+   "changes": []
+  }
+ ]
+}

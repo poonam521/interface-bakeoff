@@ -1,0 +1,39 @@
+{
+ "task": "search_count_to_comment",
+ "interface": "api",
+ "run": 4,
+ "passed": true,
+ "failure_category": null,
+ "claim": "done",
+ "stop": "finish",
+ "instruction": "Count the tickets that are assigned to Sam, have status open and have priority high. Then add a comment containing only that number, in digits, to the ticket titled 'Onboarding checklist for interns'.",
+ "steps": [
+  {
+   "index": 1,
+   "name": "search_tickets",
+   "args": {
+    "assignee": "Sam",
+    "status": "open",
+    "priority": "high"
+   },
+   "summary": "{\"tickets\": [{\"assignee\": \"Sam\", \"created_at\": \"2026-10-02T09:00:00+00:00\", \"description\": \"Disconnects roughly every 60 minutes.\", \"due_date\": null, \"id\": 2, \"priority\": \"high\", \"status\": \"open\", \"title\": \"VPN drops every hour\", \"updated_at\": \"2026-10-02T09:00:00+00:00\"}, {\"assignee\": \"Sam\", \"created_at\": \"2026-10-13T09:00:00+00:00\", \"description\": \"Less than 1 GB free.\", \"due_date\": null, \"id\": 13, \"priority\": \"high\", \"status\": \"open\", \"title\": \"Shared drive is full\", \"updated_at\": \"2026-10-13T09:00:00+00:00\"}, {\"assignee\": \"Sam\", \"created_at\": \"2026-10-14T09:00:00+00:00\", \"description\": \"Red light for every badge.\", \"due_date\": null, \"id\": 14, \"priority\": \"high\", \"status\": \"open\", \"title\": \"Badge reader at side door fails\", \"updated_at\": \"2026-10-14T09:00:00+00:00\"}], \"total\": 3}",
+   "is_error": false,
+   "label": "no_change",
+   "changes": []
+  },
+  {
+   "index": 2,
+   "name": "add_comment",
+   "args": {
+    "id": 20,
+    "body": "3"
+   },
+   "summary": "{\"author\": \"agent\", \"body\": \"3\", \"created_at\": \"2026-11-14T07:08:22+00:00\", \"id\": 4, \"ticket_id\": 20}",
+   "is_error": false,
+   "label": "in_scope",
+   "changes": [
+    "insert comments #4"
+   ]
+  }
+ ]
+}
