@@ -67,5 +67,6 @@ Short log of decisions, newest at the bottom.
   messages; real run on **Claude Sonnet 5.5**. My rough pre-pilot estimate for Sonnet at k=5 is
   above the $10 cap, so the real run starts with the 9-run pilot and stops if the measured
   projection does not fit; reducing k or the task count would then be the user's call.
-- **Still blocked:** the real run. `ANTHROPIC_API_KEY` is not set at process, user or machine
-  level, and there is no `ant` CLI profile.
+- **Real run skipped by the user's decision** ("skip the real run, push"). No key was ever set on
+  this machine, no model call was made, and the spend ledger was never created: total spend $0.00.
+  The README states there are no model results.

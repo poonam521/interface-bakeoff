@@ -10,10 +10,10 @@ headline number is **Pass^k: the share of tasks the agent passes in *every one* 
 the share of runs that pass. A second module, `silentfail`, injects plausible-but-wrong tool
 results and measures how well cheap checks catch them.
 
-> **Status: the real model run has not been done yet.** The harness, tests, fake-agent runs and
-> silentfail scoring are complete. The k=5 run against a real model is waiting on an API key and
-> a model choice (see [NOTES.md](NOTES.md)). Until then this README contains **no model results**.
-> Every number below comes from a file under `results/`.
+> **Status: no real model run has been done.** The harness, tests, fake-agent runs and silentfail
+> scoring are complete. The planned k=5 run on Claude Sonnet 5.5 was skipped for now (see
+> [NOTES.md](NOTES.md)), so this README contains **no model results**. Every number below comes
+> from a file under `results/`.
 
 ## Why it matters
 
@@ -50,8 +50,9 @@ notice when the agent or its tools are wrong. Sources are summarised in
 
 ### Real model run (k=5, 15 tasks, 3 interfaces)
 
-**Not run yet.** No model numbers will appear here until the run has been done and its raw
-results are committed under `results/`.
+**Not run.** No model numbers will appear here until a run has been done and its raw results
+are committed under `results/`. The commands under "Run it" do it, starting with a pilot that
+projects the full cost against the $10 cap.
 
 ### Harness check with the fake agent (not model results)
 
@@ -145,7 +146,8 @@ trajectory per run with every action and its per-step database diff, plus `repor
 
 ## Limitations
 
-- **No real model results yet** (see Status).
+- **No real model results** (see Status). The model adapter is tested only against a stubbed
+  client, not the live API.
 - One small app written for this project, 15 tasks, one model. Results will describe this setup,
   not interfaces in general. With 15 tasks the confidence intervals are wide; the report prints them.
 - Current Claude models do not accept a temperature setting, so run-to-run variation is whatever
