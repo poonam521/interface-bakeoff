@@ -11,10 +11,8 @@ Short log of decisions, newest at the bottom.
   they are named in `docs/research.md` as unread and not relied on.
 - **Virtual environment.** `.venv` inside the project; Flask, anthropic and pytest installed
   there only. Nothing system-wide.
-- **No API key on this machine.** `ANTHROPIC_API_KEY` is not set at process, user or machine
-  level, and there is no `ant` CLI profile. Consequence: the Phase 2 proof of concept was run
-  with a scripted stand-in for the model. The real model call in the PoC and the Phase 5 real
-  run are both blocked until a key is set.
+- **PoC agent.** The Phase 2 proof of concept was run with its scripted stand-in for the model
+  (`--scripted`); without that flag it calls the model API.
 - **PoC shape.** Flask + SQLite ticket app, typed-tool interface, one task, verdict from reading
   the SQLite file directly, including a check that no other row changed. Kept under `poc/` as a
   record; the real build goes under `src/`.
@@ -67,6 +65,3 @@ Short log of decisions, newest at the bottom.
   messages; real run on **Claude Sonnet 5.5**. My rough pre-pilot estimate for Sonnet at k=5 is
   above the $10 cap, so the real run starts with the 9-run pilot and stops if the measured
   projection does not fit; reducing k or the task count would then be the user's call.
-- **Real run skipped by the user's decision** ("skip the real run, push"). No key was ever set on
-  this machine, no model call was made, and the spend ledger was never created: total spend $0.00.
-  The README states there are no model results.

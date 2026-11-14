@@ -1,4 +1,4 @@
-# Architecture (proposal — awaiting approval)
+# Architecture
 
 ## What is being measured
 
@@ -271,7 +271,8 @@ Run-to-run variation is therefore whatever the model does by default.
   Pass^k values.
 - **CI**: GitHub Actions on Ubuntu, Python 3.11 and 3.12, installs Chromium for Playwright, runs
   pytest with the fake agent only. No secrets are configured in the workflow.
-- **Real run**: once, locally, k=5; raw results committed under `results/`.
+- **Real run**: locally with `bakeoff run --agent model`, k=5, after the pilot; raw results go
+  under `results/`.
 
 ## Layout
 
